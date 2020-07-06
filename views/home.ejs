@@ -1,0 +1,79 @@
+<%- include("partials/header") %>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+            <a class="navbar-brand" href="#">Cumpara Bilet</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Artisti <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Locatii <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Concerte <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Teatru <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Login <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cos cumparaturi <span class="sr-only">(current)</span></a>
+                </li>   
+              </ul>
+            </div>
+        </div>
+          </nav>
+
+
+
+          <div class="jumb">
+              <div class="container">
+              <h1>Cumpara bilet</h1>
+            </div>
+          </div>
+
+          <section id="evenimente">
+            <div class="container">
+            <div class="row">
+              <% arrEvenimente.forEach(function(eveniment){%>
+
+            <div class="col-lg-4">
+                <div class="card" >
+                    <img  class="card-img-top" src="poza.jpg">
+                    <div class="card-body">
+                      <h5 class="card-title"><%= eveniment.name %></h5>
+                      <p class="card-text"> <%= eveniment.descriere %> </p>
+                      <p class="card-text"><%= eveniment.locatie %></p>
+                      <a href="#" class="btn btn-primary" onclick="location.href='/detalii'">Cumpara Bilet</a>
+                    </div>
+                  </div>
+                </div>
+
+                <% }); %>
+
+
+  
+
+
+
+
+
+    </div>
+    </div>
+        </section>
+
+
+        <%- include("partials/footer") %>
+
+
+
+

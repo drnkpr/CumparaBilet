@@ -1,0 +1,101 @@
+body{
+    background-color: #f2f2f2;
+}
+
+.card{
+    box-shadow: 5px 5px 8px 4px rgba(143,143,143,1);
+    transition: 0.6s;
+    margin-bottom: 2vh;
+    border-radius: 15px;
+}
+
+.card:hover{
+    box-shadow: none;
+}
+
+
+.card img{
+    height: 30vh;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+}
+
+.card-body{
+    min-height: 28vh;
+    max-height: 28vh;
+}
+
+.jumb{
+    background-color: #185f87;
+    height: 25vh;
+    margin-bottom: 5vh;
+}
+
+.jumb .container h1{
+    color: #E2E8F0;
+    padding-top: 5vh;
+}
+
+.jumb .container p{
+    color: #E2E8F0;
+}
+
+
+#imgMare{
+    position: absolute;
+    right: 5%;
+    bottom: 5vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh;
+    width: 30%;
+}
+
+#preturi{
+    padding: 10px;
+    position: absolute;
+    left: 5%;
+    bottom: 2vh;
+    height: 65vh;
+    width: 55%;
+    text-align: center;
+}
+
+#preturi table{
+    text-align: center;
+    width: 100%;
+}
+
+#preturi table th{
+    padding-bottom: 15px;
+    font-size: 1.5em;
+}
+
+#preturi table td{
+    color: #185f87;
+    padding: 5px;
+}
+
+#preturi tr:hover td{
+    background-color: #185f87;
+    color: #E2E8F0;
+    transition: 0.5s;
+}
+
+#preturi label, select{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+
+#preturi select{
+    width: 60%;
+}
+
+#preturi label{
+    color: #185f87;
+    font-weight: bold;
+    font-size: 1.7em;
+}
